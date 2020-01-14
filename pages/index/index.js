@@ -222,8 +222,7 @@ Page({
           var tempFilePath = res.tempFilePath;
           wx.saveImageToPhotosAlbum({
             filePath: tempFilePath,
-            success(res) {
-              utils.aiCardActionRecord(19);
+            success(res) { 
               wx.showModal({
                 content: '图片已保存到相册，赶紧晒一下吧~',
                 showCancel: false,
